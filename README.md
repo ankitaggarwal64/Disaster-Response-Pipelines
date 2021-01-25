@@ -16,8 +16,7 @@
 
 The goal of the project is to analyze disaster data and build a Natural Language Processing (NLP) model for an API that classifies disaster messages. 
 This dataset is provided by [Figure Eight](https://www.figure-eight.com/) which contains pre-labelled tweet and messages from real-life disaster events. 
-Through a web app developed with this project, an emergency worker can input a new message and get classification results in several categories. The web app also displays visualizations of the data.
- 
+Through a web app developed with this project, an emergency worker can input a new message and get a prediction for the response categories the message is likely to belong, reducing the potential reaction time of the responding organizations.
 
 ## Project Descriptions<a name = "descriptions"></a>
 The project has three components:
