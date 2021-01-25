@@ -15,8 +15,8 @@
 ## Project Motivation<a name="motivation"></a>
 
 The goal of the project is to analyze disaster data and build a Natural Language Processing (NLP) model for an API that classifies disaster messages. 
-This dataset is provided by [Figure Eight](https://www.figure-eight.com/) and contains pre-labelled tweet and messages from real-life disaster events. 
-Through a web app, an emergency worker can input a new message and get classification results in several categories. The web app also displays visualizations of the data.
+This dataset is provided by [Figure Eight](https://www.figure-eight.com/) which contains pre-labelled tweet and messages from real-life disaster events. 
+Through a web app developed with this project, an emergency worker can input a new message and get classification results in several categories. The web app also displays visualizations of the data.
  
 
 ## Project Descriptions<a name = "descriptions"></a>
@@ -83,17 +83,17 @@ To execute the app follow the instructions:
 
 ## Dependencies <a name="Dependencies"></a>
 
--Python 3.*
--Machine Learning Libraries: NumPy, SciPy, Pandas, Scikit-Learn
--Natural Language Process Libraries: NLTK
--SQLlite Database Libraries: SQLalchemy
--Model Loading and Saving Library: Pickle
--Web App and Data Visualization: Flask, Plotly
+- Python 3.*
+- Machine Learning Libraries: NumPy, SciPy, Pandas, Scikit-Learn
+- Natural Language Process Libraries: NLTK
+- SQLlite Database Libraries: SQLalchemy
+- Model Loading and Saving Library: Pickle
+- Web App and Data Visualization: Flask, Plotly
 
 
 ## Acknowledgements <a name="Acknowledgements"></a>
 
--[Figure Eight](https://www.figure-eight.com/)for providing the relevant dataset to train the model
+-[Figure Eight](https://www.figure-eight.com/) for providing the relevant dataset to train the model
 
 
 ## Web App Screenshots <a name="Screenshots"></a>
