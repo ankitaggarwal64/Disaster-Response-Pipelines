@@ -103,8 +103,10 @@ To execute the app follow the instructions:
 
 ## Web App Screenshots <a name="Screenshots"></a>
 1. Homepage
+
 ![Homepage](https://github.com/ankitaggarwal64/Disaster-Response-Pipelines/blob/main/images/Screenshot_app_mainpage.JPG)
 
 2. Message classifier page
+
 ![Message classifier page](https://github.com/ankitaggarwal64/Disaster-Response-Pipelines/blob/main/images/Screenshot_app_message_classifier_page.JPG)
 
