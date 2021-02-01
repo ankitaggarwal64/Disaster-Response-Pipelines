@@ -21,7 +21,7 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import hamming_loss
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.metrics import make_scorer
-from sklearn.metrics import accuracy_score,precision_score,recall_score
+from sklearn.metrics import accuracy_score,precision_score,recall_score,f1_score
 from sklearn.metrics import average_precision_score
 import pickle
 
@@ -84,24 +84,23 @@ def build_model():
                                  (random_state=42))) ])
     
     # define parameters for for GridSearchCV
-    parameters = {'clf__estimator__max_depth': [5,10,20]}
+    parameters = {'clf__estimator__max_depth': [10,20]}
     
     # define scoring metrics
     scoring = {'accuracy': make_scorer(accuracy_score),
            'precision': make_scorer(precision_score, average = 'macro'),
            'recall': make_scorer(recall_score, average = 'macro'),
-           'average_precision_macro': make_scorer(average_precision_score, 
-                                                  average = 'macro')}
+           'f1_score': make_scorer(f1_score, average = 'macro')}
     
     # create grid search object and return as final model pipeline
     CV = GridSearchCV(estimator = pipeline,scoring = scoring ,
-                  param_grid = parameters,refit ="average_precision_macro"
+                  param_grid = parameters,refit ="f1_score"
                   ,cv=3,return_train_score=True)
     return CV
   
     
 def evaluate_model(model, X_test, Y_test, category_names):
-    """ proviee the classification report"""
+    """ provide the classification report"""
     
     Y_pred = model.predict(X_test)
     
