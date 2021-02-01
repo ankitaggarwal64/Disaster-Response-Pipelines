@@ -50,16 +50,22 @@ The files structure is arranged as below:
 	- ETL Pipeline Preparation.ipynb: contains ETL pipeline preparation code
 	- ML Pipeline Preparation.ipynb: contains ML pipeline preparation code
 	- workspace
-		- \app
-			- run.py: flask file to run the app
-		- \templates
-			- master.html: main page of the web application 
-			- go.html: result web page
-		- \data
+		- \Data
 			- disaster_categories.csv: categories dataset
 			- disaster_messages.csv: messages dataset
 			- DisasterResponse.db: disaster response database
 			- process_data.py: ETL process
+
+		- \app
+			- run.py: flask file to run the app
+
+		- \templates
+			- master.html: main page of the web application 
+			- go.html: result web page
+
+		- \images
+			- Screenshot_app_mainpage: app home page
+			- Screenshot_app_message_classifier_page: app message classifier page
 		- \models
 			- train_classifier.py: classification code
 
@@ -96,4 +102,9 @@ To execute the app follow the instructions:
 
 
 ## Web App Screenshots <a name="Screenshots"></a>
+1. Homepage
+![Homepage](https://github.com/ankitaggarwal64/Disaster-Response-Pipelines/blob/main/images/Screenshot_app_mainpage.JPG)
+
+2. Message classifier page
+![Message classifier page](https://github.com/ankitaggarwal64/Disaster-Response-Pipelines/blob/main/images/Screenshot_app_message_classifier_page.JPG)
 
